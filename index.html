@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <title>Frontend Mentor | NFT preview card component</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+
+      body{
+        background-color: hsl(217, 54%, 11%);
+        font-family: 'Outfit', sans-serif;
+        font-size: 18px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+      }
+
+      .card{
+        background-color: hsl(216, 50%, 16%);
+        width: 80%;
+        border-radius: 1em;
+        margin: 0px auto;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+      }
+
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+        margin-top: 20px;
+        color: hsl(215, 51%, 70%);
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+
+      .card{
+        padding: 1.3em;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        max-width: 350px;
+      }
+
+      img{
+        width: 100%;
+        border-radius: 0.5em;
+      }
+      .info{
+        width: 100%;
+      }
+
+      .title{
+        color:hsl(0, 0%, 100%);
+        font-weight: 600;
+        font-size: 1.2em;
+      }
+
+      .text{
+        color: hsl(215, 51%, 70%);
+        font-weight: 200;
+        font-size: 1em;
+      }
+
+      .info-price{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .price{
+        color: hsl(178, 100%, 50%);
+        font-weight: 400;
+        display: flex;
+        align-items: center;
+      }
+
+      .price-ethereum{
+        height: 1em;
+        width: auto;
+        margin-right: 5px;
+      }
+
+      .time{
+        color:hsl(215, 51%, 70%);
+        font-weight: 300;
+        display: flex;
+        align-items: center;
+      }
+
+      .time-clock{
+        height: 1em;
+        width: auto;
+        margin-right: 5px;
+      }
+
+      .title,.text,.info-price,.author{
+        margin-top: 1em;
+      }
+
+      .author-img{
+        height: 2em;
+        width: auto;
+        border: 2px white solid;
+        border-radius: 50%;
+        margin-right: 15px;
+      }
+
+      .author{
+        display: flex;
+        align-items: center;
+        padding-top: 10px;
+        border-top: 1px solid hsl(215, 32%, 27%);
+        color: hsl(215, 51%, 70%);
+        font-weight: 200;
+      }
+
+      .name{
+        color: white;
+      }
+
+      
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="card">
+        <div class="img-nft">
+          <img src="images/image-equilibrium.jpg" alt="" />
+        </div>
+        <div class="info">
+          <div class="description">
+            <div class="title">Equilibrium #3429</div>
+
+            <div class="text">
+              Our Equilibrium collection promotes balance and calm.
+            </div>
+
+            <div class="info-price">
+              <div class="price">
+                <img src="images/icon-ethereum.svg" class="price-ethereum">
+                0.041 ETH
+              </div>
+              <div class="time">
+                <img src="images/icon-clock.svg" class="time-clock">
+                3 days left 
+              </div>
+            </div>
+
+            <div class="author">
+              <img src="images/image-avatar.png" class="author-img">
+              <p>Creation of </p><span class="name">Jules Wyvern</span> 
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Angelop102</a>.
+    </div>
+  </body>
+</html>
